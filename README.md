@@ -7,7 +7,7 @@
 
 &emsp;Working in an Agile environment, we followed Scrum methodologies, including daily stand-ups, sprint planning, retrospectives, and task estimation. Much of the site had already been built, giving us the challenge of contributing to a legacy codebase—learning how to extend functionality, fix bugs, and follow established coding patterns.
 
-&emsp;During the sprint, I was assigned to work primarily on the Rentals area of the site. I created and updated models and views for RentalItems and RentalHistories using Entity Framework. I also collaborated with other team members on UX improvements, code cleanup, and logic refactoring. The experience helped me improve both my C# and version control skills, giving me the confidence to integrate clean code into a shared repository and navigate unfamiliar codebases effectively.
+&emsp;During the 8-day sprint, I was assigned to work primarily on the Rentals area of the site. I created and updated models and views for RentalItems and RentalHistories using Entity Framework. I also collaborated with other team members on UX improvements, code cleanup, and logic refactoring. The experience helped me improve both my C# and version control skills, giving me the confidence to integrate clean code into a shared repository and navigate unfamiliar codebases effectively.
 
 ## Core Technologies
 * Backend: C#, ASP.NET MVC, Entity Framework
