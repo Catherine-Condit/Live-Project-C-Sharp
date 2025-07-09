@@ -63,7 +63,7 @@ To ensure database connectivity, I registered the new model with the existing Ap
 &emsp;After scaffolding the basic CRUD pages for the RentalHistory model, I focused on improving the layout and functionality of the Create and Edit forms to match the desired UI shown in a provided design reference. I styled both forms to limit the content width to 600 pixels and arranged the Rental dropdown and RentalDamaged checkbox on the same line for a cleaner, more intuitive layout. Additionally, I brought the "Back to List" button inside the form and centered it alongside the primary action button to improve visual balance and user flow. To enhance interactivity, I wrote a jQuery script that dynamically updated the label for the DamagesIncurred field based on whether the RentalDamaged checkbox was checked. When checked, the label reads “Damages Incurred”; when unchecked, it switches to “Notes.” This made the form both visually polished and responsive to user input, aligning with TheatreCMS3's UX practices.
 </br>
 <p align=center>
-<img src="renthiscreate.gif" width="50%" height="50%" />
+<img src="renthiscreate.gif" />
 </p>
 
 ##
@@ -97,7 +97,7 @@ To ensure database connectivity, I registered the new model with the existing Ap
 &emsp;To enhance the usability of the RentalHistory index view, I implemented sorting functionality that allows users to filter and reorder results dynamically. By default, all RentalHistory records are displayed from most recent to oldest, ensuring that the most relevant data appears first. To provide additional sorting options, I added a select dropdown menu positioned flush to the right side of the RentalHistories list. The options include: No Extra Sorting, Damaged Rentals, Undamaged Rentals, Rentals A–Z, and Rentals Z–A. Selecting one of these options triggers a JavaScript function that sends an Ajax request to a controller action, which returns a sorted partial view without requiring a full page reload. This approach keeps the page responsive and allows for server-side data accuracy while delivering a smooth user experience. On the backend, I handled sorting logic using LINQ, applying the correct order or filters based on the user's selection. This feature gave users an intuitive and efficient way to navigate rental history data.
 </br>
 <p align=center>
-<img src="renthisindex.gif" width="50%" height="50%" />
+<img src="renthisindex.gif" />
 </p>
 
 ##
@@ -154,7 +154,7 @@ public FileContentResult GetImage(int id)
 &emsp;I also customized the form’s interactivity: input fields now change background color and display a themed orange border when focused, creating a subtle but effective user cue. For the form controls, I styled both the “Submit” and “Back to List” buttons with distinct colors, rounded corners, and hover effects. These buttons are now centered and visually differentiated, making the page both more attractive and intuitive to navigate. The result is a polished, user-friendly form experience that aligns with the project’s overall visual identity.
 </br>
 <p align=center>
-<img src="rentitcreate.gif" width="50%" height="50%" />
+<img src="rentitcreate.gif" />
 </p>
 
 ##
@@ -163,7 +163,7 @@ public FileContentResult GetImage(int id)
 &emsp;The next major enhancement to the RentalItem feature involved fully redesigning the Index page to replace the default scaffolded table with a responsive, image-forward card layout. I began by converting the “Create New” text link into a styled Bootstrap button for better visual consistency. I then built out a grid of Bootstrap cards, each representing a RentalItem from the database. These cards included the item’s image, name, and a clean layout to improve visual engagement.
 </br>
 <p align=center>
-<img src="rentitindex.gif" width="50%" height="50%" />
+<img src="rentitindex.gif" />
 </p>
 
 &emsp;To add interactivity, I implemented an image overlay on hover: the image slightly darkens and reveals two Font Awesome icon buttons for editing and deleting the rental item. These buttons were styled to match the site’s theme and offer clear feedback on hover. Each entire card was also made clickable, linking to the RentalItem’s Details view — giving users a seamless navigation experience without relying solely on small text links. This overhaul made the Index page much more visually appealing and aligned it with modern UI patterns, significantly improving both aesthetics and usability.
@@ -227,7 +227,7 @@ public FileContentResult GetImage(int id)
 &emsp;To improve the usability and responsiveness of the RentalItem Create page, I implemented a live image preview feature. When a user selects a photo file to upload for a rental item, a thumbnail preview of the image is immediately displayed within the form—before the item is actually created. This gives users immediate visual confirmation that they’ve selected the correct file, reducing the risk of uploading the wrong image.
 </br>
 <p align=center>
-<img src="rentitimage.gif" width="50%" height="50%" />
+<img src="rentitimage.gif" />
 </p>
 
 &emsp;This functionality was implemented using JavaScript. I added an event listener to the file input field that triggers when a file is selected. The script reads the image using a FileReader and sets the result as the src for an <img> element within the form. The preview is styled to match the rest of the form layout and adjusts responsively depending on the image size. This feature adds a layer of professionalism and convenience to the user interface, closing out the RentalItem CRUD feature set with a strong finish.
