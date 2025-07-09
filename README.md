@@ -254,4 +254,4 @@ public FileContentResult GetImage(int id)
 
 ##
 
-*Jump To: [Introduction](#introduction),  [Key Features & Functionality](#key-features--functionality), [Display All Items](#display-all-items), [Connect to API](#connect-to-api), [BeautifulSoup Setup](#beautifulsoup-setup), [Front-End Improvements](#front-end-improvements), [Conclusion](#conclusion), [Key Learnings & Challenges](#key-learnings--challenges)*
+*Jump To: [Introduction](#introduction), [Key Stories and Features I Worked On](#key-stories-and-features-i-worked-on), [RentalHistory Index](#rentalhistory-index), [RentalItem Model CRUD](#rentalitem-model-crud), [RentalItem Index](#rentalitem-index), [RentalItem Index Search](#rentalitem-index-search), [Key Takeaways](#key-takeaways)*
